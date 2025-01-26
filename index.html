@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cars.html">Cars</a></li>
+        </ul>
+        <div class="login">
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="img">
+        <img src="img/car1.png" alt="">
+    </div>
+
+    <header>
+        <h1>Welcome to Used Car Sales</h1>
+    </header>
+    
+
+
+
+
+
+    <section class="slider">
+        <div class="slider-track">
+            <img src="img/1.webp" alt="Slide 1">
+            <img src="img/واجهه.webp" alt="Slide 2">
+            <img src="img/كارولا 2020.webp" alt="Slide 3">
+            <img src="img/مبيعات.jpg" alt="Slide 4">
+            <img src="img/car1.png" alt="Slide 5">
+        </div>
+        <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="home-section">
+        <h1>Discover your perfect used car</h1>
+        <p>We offer you a wide range of reliable used cars that suit your needs and budget</p>
+        <div class="car-images">
+            <img src="img/car3.jpg" alt="Car 1">
+            <img src="img/car2.jpg" alt="Car 2">
+            <img src="img/car3.jpg" alt="Car 3">
+            <img src="img/car2.jpg" alt="Car 4">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <p>We provide exceptional services to make your car-buying experience smooth and hassle-free.</p>
+        <div class="services-container">
+            <div class="service">
+                <h3>Certified Cars</h3>
+                <p>All our cars go through rigorous quality checks to ensure reliability and performance.</p>
+            </div>
+            <div class="service">
+                <h3>Affordable Financing</h3>
+                <p>We offer flexible financing options tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <h3>Customer Support</h3>
+                <p>Our dedicated support team is here to assist you every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+    
+    <section class="home-section">
+        <h1>Find Your Perfect Used Car</h1>
+        <p>Explore our extensive collection of reliable used cars that fit your budget and style. Start your journey today!</p>
+        <button><a href="cars.html">View Cars</a></button>
+    </section>
+
+
+
+
+    <section class="features-section">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Wide Selection</h3>
+                <p>We offer a vast range of cars from various brands to meet your needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable Prices</h3>
+                <p>Get the best deals and value for your money on every purchase.</p>
+            </div>
+            <div class="feature">
+                <h3>Trusted Quality</h3>
+                <p>All our cars are thoroughly inspected to ensure top-notch quality and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>We are dedicated to helping you find the perfect used car for your needs and budget.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="contact.html">Contact</a></p>
+                <p><a href="cars.html">Cars</a></p>
+            </div>
+            <div>
+                <h3>Contact Info</h3>
+                <p>Email:Abdullahbanighanem@gmail.com</p>
+                <p>Phone: +962787491703</p>
+                <p>Address: 16 Car Street, Zarqa City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Used Car Sales. All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const sliderTrack = document.querySelector('.slider-track');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+    
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+        const totalSlides = slides.length;
+    
+        function updateSlider() {
+            const offset = -currentIndex * 100;
+            sliderTrack.style.transform = `translateX(${offset}%)`;
+        }
+    
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+    
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+    </script>
+    
+
+    
+</body>
+</html>

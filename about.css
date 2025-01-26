@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+header {
+    margin-top: 1px;
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-section {
+    background: #f5f5f5;
+}
+
+.services-section .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services-section .service-item {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-section .service-item img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.values-section {
+    background: #fff;
+}
+
+.history-section {
+    background: #f5f5f5;
+}
+
+.cta-section {
+    /* padding: 0; */
+    margin: 0;
+    background: #519dee;
+    color: #fff;
+}
+
+.cta-section h2 p {
+    color: white;
+}
+
+.cta-section button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+
+.cta-section button a{
+    text-decoration: none;
+    color: white;
+}
+
+.cta-section button:hover {
+    background-color: #3a17ab;
+}
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+}
+
+footer .footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+footer .footer-content div {
+    flex: 1 1 200px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
